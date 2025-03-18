@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> ICT 4th QTR E-PORT </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #fce4ec; /* Soft pink */
+        }
+
+        header {
+            background-color: #8d6e63; /* Warm brown */
+            color: white;
+            padding: 15px;
+            font-family: "Pacifico", cursive;
+            font-size: 22px;
+        }
+
+        /* Divider */
+        .divider {
+            width: 80%;
+            margin: 10px auto;
+            border-bottom: 4px solid #5d4037; /* Dark brown */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background: #fff8e1; /* Creamy background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #8d6e63; /* Brown */
+        }
+
+        button {
+            background-color: #f48fb1; /* Soft pink */
+            color: #4e342e; /* Dark brown */
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #ff80ab;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border: 3px solid #d7ccc8; /* Light brown */
+        }
+
+        /* Game */
+        #game-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: #ffccbc; /* Light peach */
+            margin: auto;
+            border: 5px solid #8d6e63; /* Brown */
+            border-radius: 10px;
+        }
+
+        #moving-box {
+            width: 50px;
+            height: 50px;
+            background: #f48fb1; /* Soft pink */
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 5px;
+        }
+
+           </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+        <div class="divider"></div> <!-- Divider added here -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#student-intro">Student Intro</a></li>
+                <li><a href="#ict-moments">ICT Class Moments</a></li>
+                <li><a href="#faith-moments">9-Faith Moments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>A Playful Box, A Peaceful Moment</h2>
+        <p><i>The little box drifts around like a curious kitten exploring a new space. Click if you feel like playing along.</i></p>
+        <div id="game-container">
+            <div id="moving-box"></div>
+        </div>
+    </section>
+
+    <section id="student-intro">
+        <h2>About Me</h2>
+        <div class="profile">
+            <img src="Leanne.jpg" class="profile-img">
+            <button onclick="showMessage()">Click to Learn More</button>
+            <button onclick="showContact()">Contact Me</button> <!-- New button added -->
+        </div>
+    </section>
+
+    <section id="ict-moments">
+        <h2>ICT Class Moments</h2>
+        <div class="gallery">
+            <img src="L1.jpg">
+            <img src="L2.jpg">
+            <img src="L3.jpg">
+            <img src="L4.jpg"> 
+        </div>
+ <button onClick="showICTInfo()" style="margin-top: 20px;"> Reflection </button>
+    </section>
+
+    <section id="faith-moments">
+        <h2>9-Faith Moments</h2>
+        <div class="gallery">
+            <img src="9 faith.jpg">
+            <img src="botb.jpg">
+            <img src="sd.jpg">
+            <img src="mda.jpg">
+            <img src="OAP.jpg">
+        </div>
+         </section>
+
+    <script>
+        // Function for the pop-up message with student info
+        function showMessage() {
+            alert("NAME: Leanne Anjelinne Leonidas\nGRADE & SECTION: 9-Faith\n BIRTHDAY: June 17, 2010\nHOBBIES: Drawing, Taekwon-do, Playing the piano, Listening to music, Playing games\nINTERESTS: Art, Alternative community{goth, emo, vkei, etc}, Music{goth, midwest emo, indie, rock}, Sports{volleyball, taekwon-do}, Horror games and movies");
+        }
+
+        // Function for the pop-up message with contact info
+        function showContact() {
+alert("FACEBOOK: Leanne Anjelinne\nEMAIL: leanne.leonidas062010@gmail.com");
+} 
+
+// ICT Class Moments Pop-up
+function showICTInfo() {
+alert("This school year is now nearly ending as we are now halfway 4th quarter. If I'm going to be honest, this school year has been a rollercoaster. It filled me with stress and happiness. It made me cry and laugh. I had so much fun with my teachers and classmates.\n4th quarter ICT, we learned about the different events and loops in JavaScript. Learning about events helped me understand how javascript differs from the different coding languages, as they add interactivity to the webpage. As for loops, they allow us to repeat tasks without adding extra lines of codes. Overall this quarter added up to my knowledge about making a good webpage.")
+}
+
+        // Game variables
+        let movingBox = document.getElementById("moving-box");
+
+        // Move the box randomly
+        function moveBox() {
+            let container = document.getElementById("game-container");
+            let maxX = container.clientWidth - movingBox.clientWidth;
+            let maxY = container.clientHeight - movingBox.clientHeight;
+
+            let randomX = Math.floor(Math.random() * maxX);
+            let randomY = Math.floor(Math.random() * maxY);
+
+            movingBox.style.left = randomX + "px";
+            movingBox.style.top = randomY + "px";
+        }
+
+        // Click event for the game
+        movingBox.addEventListener("click", moveBox);
+
+        // Move the box every second
+        setInterval(moveBox, 1000);
+    </script>
+</body>
+</html>
